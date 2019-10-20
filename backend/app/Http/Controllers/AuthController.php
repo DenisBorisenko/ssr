@@ -29,8 +29,9 @@ class AuthController extends Controller
     {
         if(!$token = auth()->attempt($request->only(['email','password']))){
             return response()->json([
-                'errors'=>['email'=>'Sorry,but we cant find you with these details'],
-                ],422);}
+                'errors'=>['email'=>['Sorry,but we cant find you with these details']],
+                ],422);
+        }
 
         return (new UserResource($request->user()))->additional([
             'meta' => [
@@ -40,7 +41,7 @@ class AuthController extends Controller
     }
     public function user(Request $request)
     {
-        return new UserResource($request->user());
+        return (new UserResource($request->user()));
     }
     public function logout()
     {

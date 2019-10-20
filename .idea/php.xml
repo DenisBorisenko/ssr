@@ -83,6 +83,14 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/backend/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/backend/vendor/barryvdh/laravel-cors" />
+      <path value="$PROJECT_DIR$/backend/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/backend/vendor/kylekatarnls/update-helper" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

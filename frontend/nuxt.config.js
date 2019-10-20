@@ -45,11 +45,20 @@ export default {
   */
   css: [
   ],
+
+  router:{
+    middleware:["clearValidationErrors"]
+  },
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    './plugins/mixins/user',
+    './plugins/mixins/validation',
+    './plugins/axios',
+
   ],
+
   /*
   ** Nuxt.js dev-modules
   */
@@ -60,6 +69,7 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/auth',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
   ],
@@ -68,6 +78,18 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL :"http://backend.loc:8000/api"
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: "login", method: "post", propertyName: "meta.token" },
+          user: { url: "user", method: "get", propertyName: "data" },
+          logout: { url: "logout", method: "post" },
+        },
+      }
+    }
   },
   /*
   ** Build configuration
