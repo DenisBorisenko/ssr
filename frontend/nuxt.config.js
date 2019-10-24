@@ -17,7 +17,8 @@ export default {
         rel: "stylesheet",
         href:
           "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      }
+      },
+
     ],
     script: [
       {
@@ -33,6 +34,10 @@ export default {
         src:
           "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
         type: "text/javascript"
+      },
+      {
+        src:"https://kit.fontawesome.com/ae3b028862.js",
+        type:"text/javascript",
       }
     ]
   },

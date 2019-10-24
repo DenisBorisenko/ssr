@@ -48,9 +48,7 @@
                         password:this.form.password,
                     }
                 })
-                this.$router.push({
-                    path:this.$router.query.redirect || '/profile'
-                })
+                this.$router.push( '/dashboard')
               } catch (e) {
 
               }

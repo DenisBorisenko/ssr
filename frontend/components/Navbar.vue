@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
       <nuxt-link to="/" class="navbar-brand">SSR_APP</nuxt-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,10 @@
             <nuxt-link to="/" class="nav-link">Home</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/posts" class="nav-link">Posts</nuxt-link>
+            <nuxt-link to="/topics" class="nav-link">Topics</nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/dashboard" class="nav-link">Create</nuxt-link>
           </li>
         </ul>
         <template v-if="!authenticated">

@@ -34,9 +34,7 @@
           async submit() {
               try {
                   await this.$auth.loginWith('local', {data: this.form})
-                  this.$router.push({
-                      path:this.$router.query.redirect || '/profile'
-                  })
+                  this.$router.push( '/dashboard')
               }catch(e) {
 
               }
