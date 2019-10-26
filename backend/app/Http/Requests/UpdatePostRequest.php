@@ -4,9 +4,8 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TopicCreateRequest extends FormRequest
+class UpdatePostRequest extends FormRequest
 {
-
     public function authorize()
     {
         return true;
@@ -15,8 +14,7 @@ class TopicCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:255',
-            'body' => 'required|max:2000'
+            'body' => 'max:2000',
         ];
     }
 }
