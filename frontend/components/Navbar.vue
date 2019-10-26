@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
       <nuxt-link to="/" class="navbar-brand">SSR_APP</nuxt-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,9 +28,9 @@
           </ul>
         </template>
         <template v-else>
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto ">
             <li class="nav-item">
-              <a class="nav-link">{{user.name}}</a>
+              <a class="nav-link text-light">{{user.name}}</a>
             </li>
             <li class="nav-item">
               <a @click.prevent="logout" class="nav-link">Logout</a>

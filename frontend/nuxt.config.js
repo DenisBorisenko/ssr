@@ -48,8 +48,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: ["@/assets/styles.css"],
 
   router:{
     middleware:["clearValidationErrors"]
